@@ -6,7 +6,18 @@ using UnityEngine;
 public class Events : ScriptableObject
 {
     public string eventName;
+    [TextArea]
     public string eventDescription;
-    public Conclussion affirmativeConclu;
-    public Conclussion negativeConclu;
+
+    [Space]
+    [Header("Afirmative")]
+    public ConclsGroup affirmativeConclussion;
+    [Space]
+    [Header("Negative")]
+    public ConclsGroup negativeConclussion;
+
+    public void ExcecuteConclussion(ConclsGroup efectsList)
+    {
+        efectsList.ResolveConclussions();
+    }
 }

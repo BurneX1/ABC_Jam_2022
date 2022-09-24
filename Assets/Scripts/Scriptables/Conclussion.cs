@@ -1,14 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-public class Conclussion : MonoBehaviour
+[System.Serializable]
+public class Conclussion 
 {
     public EnergyType modifierType;
     public int value;
 
-    public void Conclude(int value, EnergyType modType)
+    public void Conclude()
     {
-        
+        EnergyManager.ModifyValues(value, modifierType);
     }
 }
