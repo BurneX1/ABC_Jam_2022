@@ -41,6 +41,9 @@ public class DecisionsAutofill : MonoBehaviour
         afrText.text = actualEvent.affirmativeConclussion.text;
         ngtText.text = actualEvent.negativeConclussion.text;
 
+        afrBtn.onClick.RemoveAllListeners();
+        ngtBtn.onClick.RemoveAllListeners();
+
         afrBtn.onClick.AddListener(delegate { actualEvent.affirmativeConclussion.ResolveConclussions(); });
         ngtBtn.onClick.AddListener(delegate { actualEvent.negativeConclussion.ResolveConclussions(); });
 
