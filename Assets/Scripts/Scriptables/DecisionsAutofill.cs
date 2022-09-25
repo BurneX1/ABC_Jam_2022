@@ -94,4 +94,9 @@ public class DecisionsAutofill : MonoBehaviour
 
         }
     }
+
+    public void SingleRefresh()
+    {
+
+    }
 }
