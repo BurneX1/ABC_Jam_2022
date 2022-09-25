@@ -19,7 +19,7 @@ public class ProceduralEventRandomizer : MonoBehaviour
         }
         else
         {
-            decisionFill.actualEvent = mainEvents[Random.Range(0, mainEvents.Length - 1)];
+            decisionFill.actualEvent = mainEvents[Random.Range(0, mainEvents.Length)];
         }
 
         decisionFill.RefreshEvent();

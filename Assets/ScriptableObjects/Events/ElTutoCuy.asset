@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6070939ca31b284cb195f8de1e267ac, type: 3}
+  m_Name: ElTutoCuy
+  m_EditorClassIdentifier: 
+  eventName: El Cuy B)
+  eventDescription: "\xBFListo para pedir tu primer pr\xE9stamo con tu tarjeta sobrino?"
+  affirmativeConclussion:
+    text: "S\xED"
+    conclussion:
+    - modifierType: 2
+      value: 1000
+  negativeConclussion:
+    text: "S\xED"
+    conclussion:
+    - modifierType: 2
+      value: 1000

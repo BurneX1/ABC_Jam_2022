@@ -38,7 +38,7 @@ public class EnergyManager : MonoBehaviour
         }
     }
     
-    public int GetValue(EnergyType type)
+    public static int GetValue(EnergyType type)
     {
         for (int e = 0; e < energies.Length; e++)
         {
