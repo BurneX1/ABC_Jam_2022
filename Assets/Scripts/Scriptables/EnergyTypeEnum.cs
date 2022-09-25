@@ -1,7 +1,9 @@
 public enum EnergyType
 {
-    emotional,
-    health,
-    economic,
+    Social,
+    Salud,
+    Economia,
+    Hambre,
+    Orgullo,
 
 }

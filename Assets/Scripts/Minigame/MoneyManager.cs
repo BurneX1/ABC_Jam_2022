@@ -16,6 +16,14 @@ public class MoneyManager : MonoBehaviour
     }
     public int money { get; private set; }
 
-    public void AddMoney(int value) => money += value;
-    public void SubstractMoney(int value) => money -= value;
+    public void AddMoney(int value)
+    {
+        money += value;
+        EnergyManager.ModifyValues(value, EnergyType.Economia);
+    }
+    public void SubstractMoney(int value)
+    {
+        money -= value;
+        EnergyManager.ModifyValues(value*-1, EnergyType.Economia);
+    }
 }

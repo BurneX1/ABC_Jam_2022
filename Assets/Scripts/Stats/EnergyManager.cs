@@ -7,10 +7,17 @@ public class EnergyManager : MonoBehaviour
     public EnergyStat[] energieArray;
     public static EnergyStat[] energies;
 
+    public static EnergyManager Instance;
     private void Awake()
     {
+        if (Instance == null)
+            Instance = this;
+        else Destroy(gameObject);
+
+        DontDestroyOnLoad(gameObject);
         SetEnergie();
     }
+
     private void Update()
     {
         energieArray = energies;

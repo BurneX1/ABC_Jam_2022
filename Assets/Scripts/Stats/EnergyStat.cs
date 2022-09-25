@@ -4,6 +4,9 @@ using UnityEngine;
 [System.Serializable]
 public class EnergyStat 
 {
+
     public EnergyType stat;
+    public Sprite icon;
     public int value;
+
 }

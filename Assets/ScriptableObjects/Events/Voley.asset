@@ -10,22 +10,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a6070939ca31b284cb195f8de1e267ac, type: 3}
-  m_Name: '[Test] Cita Novia'
+  m_Name: Voley
   m_EditorClassIdentifier: 
-  eventName: Cita con tu novia
-  eventDescription: 'Esta fin de semana es tu aniversario y tu novia qiere hacer
-    algo especial. '
+  eventName: Voley con los Panas
+  eventDescription: Tus causas te han invitado a jugar Voley, pero tienen que hacer
+    chancha para alquilar una cancha. Vas a ir?
   affirmativeConclussion:
-    text: Llevarla a un restaurante elegante
+    text: Ir a jugar y aportar a la chancha
     conclussion:
-    - modifierType: 0
-      value: 15
     - modifierType: 2
-      value: -300
+      value: -100
+    - modifierType: 0
+      value: 50
   negativeConclussion:
-    text: Invitarla a comer arroz con huevo
+    text: No jalas, eres cagon
     conclussion:
-    - modifierType: 0
-      value: -5
     - modifierType: 2
-      value: -15
+      value: 5
+    - modifierType: 0
+      value: -90
