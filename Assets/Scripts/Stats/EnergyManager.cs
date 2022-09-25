@@ -1,9 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class EnergyManager : MonoBehaviour
 {
+    public static event Action ValuesRefreshed = delegate { };
     public EnergyStat[] energieArray;
     public static EnergyStat[] energies;
 
@@ -34,6 +36,7 @@ public class EnergyManager : MonoBehaviour
             if(energies[i].stat == type)
             {
                 energies[i].value += amount;
+                ValuesRefreshed.Invoke();
             }
         }
     }
