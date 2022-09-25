@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 7760103904476900311}
   - component: {fileID: 7760103904476900305}
   - component: {fileID: -25406631580154927}
+  - component: {fileID: 9075128742145050322}
   m_Layer: 0
   m_Name: Phones
   m_TagString: Untagged
@@ -125,6 +126,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8c6fa694e023e545aeae43f6ac1f3f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  drag: 0
 --- !u!114 &7760103904476900305
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -151,3 +153,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f5d53937000eeb49a3f615857665f14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ableToDestroy: 0
+--- !u!114 &9075128742145050322
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7760103904476900308}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0deabc905a6254e489752e31f23b7b2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  duration: 3
+  endRotation: {x: 0, y: 0, z: 360}
+  soundName: 

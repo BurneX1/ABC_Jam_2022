@@ -15,5 +15,11 @@ public class DragAndDrop : MonoBehaviour
             Vector2 MousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
             transform.Translate(MousePos);
         }
+
+        if(GetComponent<ProductTriggers>().ableToDestroy && !drag)
+        {
+            GetComponent<ProductTriggers>().ableToDestroy = false;
+            StartCoroutine(GetComponent<SimulateFalling>().Fall());
+        }  
     }
 }

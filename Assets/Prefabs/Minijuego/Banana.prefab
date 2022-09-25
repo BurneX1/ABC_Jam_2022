@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 7410731723401266185}
   - component: {fileID: 7410731723401266191}
   - component: {fileID: -647765041449508684}
+  - component: {fileID: 6499496055536412602}
   m_Layer: 0
   m_Name: Banana
   m_TagString: Untagged
@@ -125,6 +126,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8c6fa694e023e545aeae43f6ac1f3f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  drag: 0
 --- !u!114 &7410731723401266191
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -151,3 +153,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f5d53937000eeb49a3f615857665f14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ableToDestroy: 0
+--- !u!114 &6499496055536412602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7410731723401266186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0deabc905a6254e489752e31f23b7b2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  duration: 3
+  endRotation: {x: 0, y: 0, z: 360}
+  soundName: 
