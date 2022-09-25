@@ -2,11 +2,6 @@ using UnityEngine;
 
 public class Product : MonoBehaviour
 {
-    public float price;
+    public int price;
     public ProductType productType;
-}
-
-public enum ProductType
-{
-    Food, Tech, Home
 }

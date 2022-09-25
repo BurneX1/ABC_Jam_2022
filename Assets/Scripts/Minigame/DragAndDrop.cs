@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DragAndDrop : MonoBehaviour
 {
-    private bool drag;
+    public bool drag;
     private void OnMouseDown() => drag = true;
     private void OnMouseUp() => drag = false;
 
