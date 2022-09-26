@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: -647765041449508684}
   - component: {fileID: 6499496055536412602}
   m_Layer: 0
-  m_Name: Banana
+  m_Name: Manzana
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -77,7 +77,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: b402e66d81cf54546a52fedab9818fdb, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 58281f42153c2a441ab840e3f6ec8be0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -105,7 +105,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.35, y: 1.21}
+    oldSize: {x: 1.53, y: 1.67}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -139,7 +139,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad76f37a5386d154fa501108bdddfb97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  price: 2
+  price: 5
   productType: 0
 --- !u!114 &-647765041449508684
 MonoBehaviour:
