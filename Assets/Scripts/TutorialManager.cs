@@ -21,9 +21,9 @@ public class TutorialManager : MonoBehaviour
     {
         yield return new WaitUntil(() => firstCuyIntro);
         yield return new WaitUntil(() => cuyIntro.transform.parent.gameObject.activeInHierarchy == false);
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(0);
         GameObject.Find("Canvas").GetComponent<TweenScreens>().TweenPopUp(cuyTips.transform);
-        AudioManager.Instance.Play("Theme");
+        AudioManager.Instance.Play("SegundoCuy");
         GameObject.Find("Canvas").GetComponent<TweenScreens>().TweenPopUp(toolTip.transform);
         blockPanel.SetActive(true);
         firstCuyIntro = false;
@@ -41,7 +41,7 @@ public class TutorialManager : MonoBehaviour
             if(canReproduce)
             {
                 canReproduce = false;
-                AudioManager.Instance.Play("Theme");
+                AudioManager.Instance.Play("PrimerCuy");
             }
             if(Input.touchCount > 0)
             {
@@ -50,14 +50,14 @@ public class TutorialManager : MonoBehaviour
                 if (touch.phase == TouchPhase.Began)
                 {
                     cuyIntro.SetActive(false);
-                    AudioManager.Instance.Stop("Theme");
+                    AudioManager.Instance.Stop("PrimerCuy");
                     firstCuyIntro = true;
                 }
             }
             else if(Input.GetMouseButton(0))
             {
                 cuyIntro.SetActive(false);
-                AudioManager.Instance.Stop("Theme");
+                AudioManager.Instance.Stop("PrimerCuy");
                 firstCuyIntro = true;
             }
         }

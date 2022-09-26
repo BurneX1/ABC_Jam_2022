@@ -51,3 +51,15 @@ MonoBehaviour:
     volume: 0.5
     pitch: 1
     audioSource: {fileID: 0}
+  - name: PrimerCuy
+    audioClip: {fileID: 8300000, guid: dcd586a89a9c262408a17130260f6ede, type: 3}
+    loop: 0
+    volume: 1
+    pitch: 1
+    audioSource: {fileID: 0}
+  - name: SegundoCuy
+    audioClip: {fileID: 8300000, guid: b879eb76074e047438591c0b5a48f535, type: 3}
+    loop: 0
+    volume: 1
+    pitch: 1
+    audioSource: {fileID: 0}
