@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/TestScenes/BurneXTest.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/Scenes/MainScenes/01_Splash.unity
+    guid: 250b9ca54cfd0ab46bb0a7404365e300
+  - enabled: 1
+    path: Assets/Scenes/MainScenes/02_MainMenu.unity
+    guid: 7a007fc84b4b576448429fe11eb3568b
+  - enabled: 1
+    path: Assets/Scenes/MainScenes/03_Minigame.unity
+    guid: c6fde4998b4b11446ac9d427986346a3
   m_configObjects: {}
