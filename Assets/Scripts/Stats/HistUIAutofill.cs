@@ -24,10 +24,11 @@ public class HistUIAutofill : MonoBehaviour
 
         for (int i = 0; i < thisArray.Length; i++)
         {
-
-            GameObject obj = Instantiate(textPrefab, group.transform);
-            obj.GetComponentInChildren<Text>().text = thisArray[i];
-
+            if(HistoryEvents.eventType[i] == EnergyType.Economia)
+            {
+                GameObject obj = Instantiate(textPrefab, group.transform);
+                obj.GetComponentInChildren<Text>().text = thisArray[i];
+            }
         }
     }
 }

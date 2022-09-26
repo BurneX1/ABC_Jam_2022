@@ -8,6 +8,7 @@ public class HistoryEvents : MonoBehaviour
 
     public static string[] excecutetEvents = new string[0];
     public static string[] valueEvents = new string[0];
+    public static EnergyType[] eventType = new EnergyType[0];
 
 
     public static HistoryEvents Instance;
@@ -21,24 +22,27 @@ public class HistoryEvents : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
-    public static void RegisterNewEvent(string even, int value)
+    public static void RegisterNewEvent(string even, int value, EnergyType stat)
     {
-        string[] concatEvent = new string[] { even};
+        string[] concatEvent = new string[] { even };
         string[] concatValue = new string[] { value.ToString() };
+        EnergyType[] concatType = new EnergyType[] { stat };
 
         if (excecutetEvents.Length == 0 || valueEvents.Length == 0)
         {
             excecutetEvents = concatEvent;
             valueEvents = concatValue;
+            eventType = concatType;
         }
         else
         {
             excecutetEvents = excecutetEvents.Concat(concatEvent).ToArray();
             valueEvents = valueEvents.Concat(concatValue).ToArray();
+            eventType = eventType.Concat(concatType).ToArray();
 
         }
 
-        for (int i = 0; i < excecutetEvents.Length; i++)
+        /*for (int i = 0; i < excecutetEvents.Length; i++)
         {
             Debug.Log("Array: " + i + excecutetEvents[i]);
         }
@@ -47,6 +51,11 @@ public class HistoryEvents : MonoBehaviour
             Debug.Log("Array: " + e + valueEvents[e]);
 
         }
+        for (int u = 0; u < valueEvents.Length; u++)
+        {
+            Debug.Log("Array: " + u + valueEvents[u]);
 
+        }*/
     }
 }
+
