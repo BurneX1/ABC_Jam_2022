@@ -35,7 +35,17 @@ public class EnergyManager : MonoBehaviour
         {
             if(energies[i].stat == type)
             {
+      
                 energies[i].value += amount;
+
+                if (energies[i].validateMaxValue == true)
+                {
+                    if (energies[i].value >=energies[i].maxValue)
+                    {
+                        energies[i].value = energies[i].maxValue;
+                    }
+                }
+
                 ValuesRefreshed.Invoke();
             }
         }

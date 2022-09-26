@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6070939ca31b284cb195f8de1e267ac, type: 3}
   m_Name: ElTutoCuy
   m_EditorClassIdentifier: 
-  eventName: El Cuy B)
+  eventName: El Tio Cuy
   eventDescription: "\xBFListo para pedir tu primer pr\xE9stamo con tu tarjeta sobrino?"
   affirmativeConclussion:
     text: "S\xED"
