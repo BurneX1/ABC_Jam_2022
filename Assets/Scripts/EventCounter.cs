@@ -6,6 +6,7 @@ using UnityEngine.Events;
 public class EventCounter : MonoBehaviour
 {
     public UnityEvent winEvent;
+    public UnityEvent dieEvent;
     public int counter;
     public Text mesageCounter;
     public int messages = 3;
@@ -45,7 +46,15 @@ public class EventCounter : MonoBehaviour
         }
         else if(counter >= 12)
         {
-            winEvent.Invoke();
+            if(EnergyManager.GetValue(EnergyType.Economia) <= 0)
+            {
+                dieEvent.Invoke();
+            }
+            else
+            {
+                winEvent.Invoke();
+            }
+
         }
     }
 
