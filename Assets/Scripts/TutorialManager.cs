@@ -5,7 +5,7 @@ using UnityEngine;
 public class TutorialManager : MonoBehaviour
 {
     public GameObject cuyIntro;
-    public bool firstCuyIntro;
+    public static bool firstCuyIntro;
     public GameObject cuyTips;
     public GameObject toolTip;
     public GameObject blockPanel;
@@ -15,6 +15,13 @@ public class TutorialManager : MonoBehaviour
     private void Start()
     {
         StartCoroutine(cuyTip());
+
+        if(firstCuyIntro)
+        {
+            toolTip.SetActive(false);
+            cuyTips.SetActive(false);
+            cuyIntro.SetActive(false);
+        }
     }
 
     private IEnumerator cuyTip()
