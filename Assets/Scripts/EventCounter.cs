@@ -2,8 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Events;
 public class EventCounter : MonoBehaviour
 {
+    public UnityEvent winEvent;
     public int counter;
     public Text mesageCounter;
     public int messages = 3;
@@ -40,6 +42,10 @@ public class EventCounter : MonoBehaviour
         else if (counter >= 9 && counter <= 12)
         {
             currentDate.text = dates[3];
+        }
+        else if(counter >= 12)
+        {
+            winEvent.Invoke();
         }
     }
 

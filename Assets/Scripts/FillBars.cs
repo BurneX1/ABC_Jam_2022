@@ -2,8 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Events;
 public class FillBars : MonoBehaviour
 {
+    public UnityEvent dieEvent;
     public EnergyType type;
     public Image img;
     public float uiReactSpd = 1;
@@ -26,6 +28,10 @@ public class FillBars : MonoBehaviour
     void Update()
     {
         BarRefresh(img, EnergyManager.GetValue(type), maxVal);
+        if(EnergyManager.GetValue(type) == 0 )
+        {
+            dieEvent.Invoke();
+        }
     }
     private void BarRefresh(Image box, float act, float max)
     {
