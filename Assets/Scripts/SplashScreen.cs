@@ -7,6 +7,13 @@ public class SplashScreen : MonoBehaviour
     void Update()
     {
         if(Input.touchCount > 0)
-            FindObjectOfType<ChangeScene>().Change("02_MainMenu");
+        {
+            Touch touch = Input.GetTouch(0);
+
+            if (touch.phase == TouchPhase.Began)
+            {
+                FindObjectOfType<ChangeScene>().Change("02_MainMenu");
+            }
+        } 
     }
 }

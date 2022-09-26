@@ -44,4 +44,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   generalMixer: {fileID: 24300002, guid: 23fbc4551b5bcdc4abd79cd8d6e41725, type: 2}
-  sounds: []
+  sounds:
+  - name: Theme
+    audioClip: {fileID: 8300000, guid: 3f40091f542f2274e9d0f23ca445d3d9, type: 3}
+    loop: 1
+    volume: 0.5
+    pitch: 1
+    audioSource: {fileID: 0}
