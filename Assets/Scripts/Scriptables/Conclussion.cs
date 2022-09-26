@@ -10,5 +10,6 @@ public class Conclussion
     public void Conclude()
     {
         EnergyManager.ModifyValues(value, modifierType);
+        HistoryEvents.RegisterNewEvent(modifierType.ToString(), value);
     }
 }

@@ -8,5 +8,7 @@ public class EnergyStat
     public EnergyType stat;
     public Sprite icon;
     public int value;
+    public bool validateMaxValue;
+    public int maxValue;
 
 }

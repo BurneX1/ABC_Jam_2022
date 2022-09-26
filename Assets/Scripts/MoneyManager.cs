@@ -20,10 +20,12 @@ public class MoneyManager : MonoBehaviour
     {
         money += value;
         EnergyManager.ModifyValues(value, EnergyType.Economia);
+        HistoryEvents.RegisterNewEvent("Trabajo de medio tiempo", value);
     }
     public void SubstractMoney(int value)
     {
         money -= value;
         EnergyManager.ModifyValues(value*-1, EnergyType.Economia);
+        HistoryEvents.RegisterNewEvent("Recortes salariales por errores laborales", value);
     }
 }
