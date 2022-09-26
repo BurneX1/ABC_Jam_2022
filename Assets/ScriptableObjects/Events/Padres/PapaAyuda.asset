@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6070939ca31b284cb195f8de1e267ac, type: 3}
+  m_Name: PapaAyuda
+  m_EditorClassIdentifier: 
+  eventName: Ayuda de Familia
+  eventDescription: "Tu familia te invita a comer a un lugar algo lejos de casa.
+    Parece ser un buen almuerzo \xBFQue dices?"
+  affirmativeConclussion:
+    text: Aceptas gastar para llegar alla
+    conclussion:
+    - modifierType: 2
+      value: -50
+    - modifierType: 3
+      value: 80
+  negativeConclussion:
+    text: Te ahorras el dinero y pasas
+    conclussion:
+    - modifierType: 0
+      value: -10

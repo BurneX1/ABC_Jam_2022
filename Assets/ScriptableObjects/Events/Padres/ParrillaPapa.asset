@@ -10,22 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a6070939ca31b284cb195f8de1e267ac, type: 3}
-  m_Name: Voley
+  m_Name: ParrillaPapa
   m_EditorClassIdentifier: 
-  eventName: Voley con los Panas
-  eventDescription: Tus causas te han invitado a jugar Voley, pero tienen que hacer
-    chancha para alquilar una cancha. Vas a ir?
+  eventName: "Parrilla con Pap\xE1"
+  eventDescription: "Tu pap\xE1 te invita una parrilla, tu traes la carne \xBFQue
+    dices?"
   affirmativeConclussion:
-    text: Ir a jugar y aportar a la chancha
+    text: Aceptas ir con la carne
     conclussion:
     - modifierType: 2
       value: -100
     - modifierType: 0
       value: 50
   negativeConclussion:
-    text: No jalas, eres cagon
+    text: Decides no ir y ahorrar
     conclussion:
-    - modifierType: 2
-      value: 5
     - modifierType: 0
-      value: -90
+      value: -30
