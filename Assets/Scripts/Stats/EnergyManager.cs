@@ -13,11 +13,15 @@ public class EnergyManager : MonoBehaviour
     private void Awake()
     {
         if (Instance == null)
+        {
             Instance = this;
+            SetEnergie();
+        }
+
         else Destroy(gameObject);
 
         DontDestroyOnLoad(gameObject);
-        SetEnergie();
+
     }
 
     private void Update()
