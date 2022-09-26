@@ -58,7 +58,7 @@ MonoBehaviour:
     pitch: 1
     audioSource: {fileID: 0}
   - name: SegundoCuy
-    audioClip: {fileID: 8300000, guid: b879eb76074e047438591c0b5a48f535, type: 3}
+    audioClip: {fileID: 8300000, guid: bb5e65e5c229f1c4a82f9ad3eeca25b6, type: 3}
     loop: 0
     volume: 1
     pitch: 1
