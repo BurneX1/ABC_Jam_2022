@@ -72,6 +72,7 @@ public class DecisionsAutofill : MonoBehaviour
                 }
             }
             obj.GetComponentInChildren<Image>().sprite = spr;
+            obj.GetComponentInChildren<Image>().SetNativeSize();
 
         }
 
@@ -91,6 +92,7 @@ public class DecisionsAutofill : MonoBehaviour
                 }
             }
             obj.GetComponentInChildren<Image>().sprite = spr;
+            obj.GetComponentInChildren<Image>().SetNativeSize();
 
         }
     }

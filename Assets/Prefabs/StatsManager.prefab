@@ -46,30 +46,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   energieArray:
   - stat: 0
-    icon: {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
-    value: 100
-    validateMaxValue: 0
-    maxValue: 0
+    icon: {fileID: 21300000, guid: bf98b9f79aaa5d8469aa28e1f43082e1, type: 3}
+    value: 200
+    validateMaxValue: 1
+    maxValue: 200
   - stat: 1
-    icon: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
-    value: 100
-    validateMaxValue: 0
-    maxValue: 0
+    icon: {fileID: 21300000, guid: ae2bfe8f4c28ae348bb94ad7c498ae59, type: 3}
+    value: 200
+    validateMaxValue: 1
+    maxValue: 200
   - stat: 2
-    icon: {fileID: 10915, guid: 0000000000000000f000000000000000, type: 0}
+    icon: {fileID: 21300000, guid: 2bf8ef07016cd584e8e0aee7070ad88a, type: 3}
     value: 0
     validateMaxValue: 0
     maxValue: 0
   - stat: 3
-    icon: {fileID: 21300000, guid: 7893629426693c142bff1d7fd467ac5f, type: 3}
-    value: 100
-    validateMaxValue: 0
-    maxValue: 0
+    icon: {fileID: 21300000, guid: 453fef402447d0c4eb40a3156e928fc7, type: 3}
+    value: 200
+    validateMaxValue: 1
+    maxValue: 200
   - stat: 4
-    icon: {fileID: 21300000, guid: c43843285f9612842bcc818db3b5278f, type: 3}
-    value: 100
-    validateMaxValue: 0
-    maxValue: 0
+    icon: {fileID: 21300000, guid: 6866a17cfeb1a0446ae4fdc713110179, type: 3}
+    value: 200
+    validateMaxValue: 1
+    maxValue: 200
 --- !u!114 &7906636541493642901
 MonoBehaviour:
   m_ObjectHideFlags: 0

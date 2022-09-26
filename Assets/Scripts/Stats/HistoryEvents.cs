@@ -24,7 +24,7 @@ public class HistoryEvents : MonoBehaviour
 
     public static void RegisterNewEvent(string even, int value, EnergyType stat)
     {
-        string[] concatEvent = new string[] { even };
+        string[] concatEvent = new string[] { stat.ToString() }; //Modificado por convenienvia(deberia de ir el even)
         string[] concatValue = new string[] { value.ToString() };
         EnergyType[] concatType = new EnergyType[] { stat };
 
