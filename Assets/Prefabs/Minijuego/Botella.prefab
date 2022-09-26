@@ -139,7 +139,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad76f37a5386d154fa501108bdddfb97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  price: 50
+  price: 10
   productType: 2
 --- !u!114 &-25406631580154927
 MonoBehaviour:
@@ -166,6 +166,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0deabc905a6254e489752e31f23b7b2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  duration: 20
+  duration: 3
   endRotation: {x: 0, y: 0, z: 360}
   soundName: 

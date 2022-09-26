@@ -15,5 +15,6 @@ public class SplashScreen : MonoBehaviour
                 FindObjectOfType<ChangeScene>().Change("02_MainMenu");
             }
         } 
+        else if(Input.GetMouseButton(0)) FindObjectOfType<ChangeScene>().Change("02_MainMenu");
     }
 }
