@@ -9,7 +9,7 @@ public class EnergyManager : MonoBehaviour
     public EnergyStat[] energieArray;
     public static EnergyStat[] energies;
 
-    public static EnergyManager Instance;
+    private static EnergyManager Instance;
     private void Awake()
     {
         if (Instance == null)
@@ -62,6 +62,25 @@ public class EnergyManager : MonoBehaviour
             if (energies[e].stat == type)
             {
                 return energies[e].value;
+            }
+        }
+
+        return 0;
+    }
+
+    public static int GetPorcent(EnergyType type)
+    {
+        for (int e = 0; e < energies.Length; e++)
+        {
+            if (energies[e].stat == type)
+            {
+                if(energies[e].validateMaxValue==false)
+                {
+                    return 100;
+                }
+
+
+                return (energies[e].value * 100) /  energies[e].maxValue;
             }
         }
 

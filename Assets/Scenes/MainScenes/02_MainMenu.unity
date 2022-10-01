@@ -1288,7 +1288,10 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 0d61092b402ab934fb4b23f6a91dedde, type: 2}
   - {fileID: 11400000, guid: bc9fa1cdac3326a46aa5aa2198fe7d47, type: 2}
   - {fileID: 11400000, guid: 8453b0b5d5949a244b358e97252b9480, type: 2}
+  - {fileID: 11400000, guid: 9bc2031a6af51b848b898ea1b42baeff, type: 2}
+  - {fileID: 11400000, guid: 76207f8d7610a5849a9d65e9493e7784, type: 2}
   decisionFill: {fileID: 642952638}
+  eventList: []
 --- !u!225 &247301265
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -9663,6 +9666,14 @@ PrefabInstance:
     - target: {fileID: 850646107882622691, guid: d58dc811b84c75c44bfbbbd018c86bf0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3652136015351810488, guid: d58dc811b84c75c44bfbbbd018c86bf0, type: 3}
+      propertyPath: energieArray.Array.data[3].value
+      value: 49
+      objectReference: {fileID: 0}
+    - target: {fileID: 3652136015351810488, guid: d58dc811b84c75c44bfbbbd018c86bf0, type: 3}
+      propertyPath: energieArray.Array.data[4].value
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 6275368383078374149, guid: d58dc811b84c75c44bfbbbd018c86bf0, type: 3}
       propertyPath: m_Name

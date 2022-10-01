@@ -16,6 +16,11 @@ public class Events : ScriptableObject
     [Header("Negative")]
     public ConclsGroup negativeConclussion;
 
+    public ValueCondition condition = ValueCondition.Unconditioned;
+    [Range(0, 100)]
+    public int valuePorcent;
+    public EnergyType dependenceType;
+
     public void ExcecuteConclussion(ConclsGroup efectsList)
     {
         efectsList.ResolveConclussions();
