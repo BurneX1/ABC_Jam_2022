@@ -10,6 +10,15 @@ public class ProceduralEventRandomizer : MonoBehaviour
     public DecisionsAutofill decisionFill;
     public Events[] eventList;
 
+    private void OnEnable()
+    {
+        EnergyManager.ValuesRefreshed += RefreshList;
+    }
+    private void OnDisable()
+    {
+        EnergyManager.ValuesRefreshed -= RefreshList;
+
+    }
     private void Start()
     {
         RefreshList();
