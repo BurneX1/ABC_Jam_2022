@@ -11,6 +11,6 @@ public class MinigameTime : MonoBehaviour
     {
         minigameTime -= Time.deltaTime;
         text.text = minigameTime.ToString("00");
-        if (minigameTime <= 0) FindObjectOfType<ChangeScene>().Change("02_MainMenu");
+        if (minigameTime <= 0) FindObjectOfType<ChangeScene>().Change("03_MainMenu");
     }
 }

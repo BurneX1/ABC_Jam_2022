@@ -12,9 +12,9 @@ public class SplashScreen : MonoBehaviour
 
             if (touch.phase == TouchPhase.Began)
             {
-                FindObjectOfType<ChangeScene>().Change("02_MainMenu");
+                FindObjectOfType<ChangeScene>().Change("03_MainMenu");
             }
         } 
-        else if(Input.GetMouseButton(0)) FindObjectOfType<ChangeScene>().Change("02_MainMenu");
+        else if(Input.GetMouseButton(0)) FindObjectOfType<ChangeScene>().Change("03_MainMenu");
     }
 }

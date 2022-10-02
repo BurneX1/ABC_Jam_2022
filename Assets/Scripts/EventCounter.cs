@@ -64,7 +64,7 @@ public class EventCounter : MonoBehaviour
         if(messages <= 0)
         {
             messages = 3;
-            GameObject.Find("FadePanel").GetComponent<ChangeScene>().Change("03_Minigame");
+            GameObject.Find("FadePanel").GetComponent<ChangeScene>().Change("04_Minigame");
         }
         mesageCounter.text = "Tienes " + messages + " mensajes nuevos !!";
 
