@@ -44,8 +44,8 @@ public class DecisionsAutofill : MonoBehaviour
         afrBtn.onClick.RemoveAllListeners();
         ngtBtn.onClick.RemoveAllListeners();
 
-        afrBtn.onClick.AddListener(delegate { actualEvent.affirmativeConclussion.ResolveConclussions(); });
-        ngtBtn.onClick.AddListener(delegate { actualEvent.negativeConclussion.ResolveConclussions(); });
+        //afrBtn.onClick.AddListener(delegate { actualEvent.affirmativeConclussion.ResolveConclussions(); });
+        //ngtBtn.onClick.AddListener(delegate { actualEvent.negativeConclussion.ResolveConclussions(); });
 
         foreach (Transform child in afGrp.transform)
         {
