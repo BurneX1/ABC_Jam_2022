@@ -60,7 +60,7 @@ public class DecisionsAutofill : MonoBehaviour
         {
 
             GameObject obj = Instantiate(efectUIpref, afGrp.transform);
-            obj.GetComponentInChildren<Text>().text = actualEvent.affirmativeConclussion.conclussion[i].value + "";
+            obj.GetComponentInChildren<EfectElements>().txt.text = actualEvent.affirmativeConclussion.conclussion[i].value + "";
             Sprite spr = null;
 
             for (int e = 0; e < EnergyManager.energies.Length; e++)
@@ -71,8 +71,8 @@ public class DecisionsAutofill : MonoBehaviour
                     break;
                 }
             }
-            obj.GetComponentInChildren<Image>().sprite = spr;
-            obj.GetComponentInChildren<Image>().SetNativeSize();
+            obj.GetComponentInChildren<EfectElements>().icon.sprite = spr;
+            obj.GetComponentInChildren<EfectElements>().icon.SetNativeSize();
 
         }
 
@@ -80,7 +80,7 @@ public class DecisionsAutofill : MonoBehaviour
         {
 
             GameObject obj = Instantiate(efectUIpref, ngtGrp.transform);
-            obj.GetComponentInChildren<Text>().text = actualEvent.negativeConclussion.conclussion[i].value + "";
+            obj.GetComponentInChildren<EfectElements>().txt.text = actualEvent.negativeConclussion.conclussion[i].value + "";
             Sprite spr = null;
 
             for(int e = 0; e<EnergyManager.energies.Length;e++)
@@ -91,12 +91,21 @@ public class DecisionsAutofill : MonoBehaviour
                     break;
                 }
             }
-            obj.GetComponentInChildren<Image>().sprite = spr;
-            obj.GetComponentInChildren<Image>().SetNativeSize();
+            obj.GetComponentInChildren<EfectElements>().icon.sprite = spr;
+            obj.GetComponentInChildren<EfectElements>().icon.SetNativeSize();
 
         }
     }
 
+    public void SetAfirmative(Button btn)
+    {
+
+    }
+
+    public void SetNegative(Button btn)
+    {
+
+    }
     public void SingleRefresh()
     {
 

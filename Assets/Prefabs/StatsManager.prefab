@@ -46,12 +46,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   energieArray:
   - stat: 0
-    icon: {fileID: 21300000, guid: bf98b9f79aaa5d8469aa28e1f43082e1, type: 3}
+    icon: {fileID: 21300000, guid: 4889dcb4270f5364d94bef96accd4880, type: 3}
     value: 200
     validateMaxValue: 1
     maxValue: 200
   - stat: 1
-    icon: {fileID: 21300000, guid: ae2bfe8f4c28ae348bb94ad7c498ae59, type: 3}
+    icon: {fileID: 21300000, guid: 4ef94391291e25847a4a7b9291980535, type: 3}
     value: 200
     validateMaxValue: 1
     maxValue: 200
@@ -61,12 +61,12 @@ MonoBehaviour:
     validateMaxValue: 0
     maxValue: 1000000
   - stat: 3
-    icon: {fileID: 21300000, guid: 453fef402447d0c4eb40a3156e928fc7, type: 3}
+    icon: {fileID: 21300000, guid: 41de97d17af3a894dbf7181e9a02d30f, type: 3}
     value: 200
     validateMaxValue: 1
     maxValue: 200
   - stat: 4
-    icon: {fileID: 21300000, guid: 866e3b7e51c3b5945a3c24cc71e2239c, type: 3}
+    icon: {fileID: 21300000, guid: c041f55a0d2f0604e9d2c090e63e2145, type: 3}
     value: 200
     validateMaxValue: 1
     maxValue: 200
