@@ -140,7 +140,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   price: 25
-  productType: 0
+  productType: 1
 --- !u!114 &-647765041449508684
 MonoBehaviour:
   m_ObjectHideFlags: 0
