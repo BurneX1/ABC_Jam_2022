@@ -99,12 +99,14 @@ public class DecisionsAutofill : MonoBehaviour
 
     public void SetAfirmative(Button btn)
     {
-
+        btn.onClick.RemoveAllListeners();
+        btn.onClick.AddListener(delegate { actualEvent.affirmativeConclussion.ResolveConclussions(); });
     }
 
     public void SetNegative(Button btn)
     {
-
+        btn.onClick.RemoveAllListeners();
+        btn.onClick.AddListener(delegate { actualEvent.negativeConclussion.ResolveConclussions(); });
     }
     public void SingleRefresh()
     {
