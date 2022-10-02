@@ -17,6 +17,9 @@ public class DecisionsAutofill : MonoBehaviour
     public Button ngtBtn;
     public Text ngtText;
     public GameObject ngtGrp;
+
+    public Sprite gainBox;
+    public Sprite loseBox;
     // Start is called before the first frame update
     void Start()
     {
@@ -60,6 +63,19 @@ public class DecisionsAutofill : MonoBehaviour
         {
 
             GameObject obj = Instantiate(efectUIpref, afGrp.transform);
+            if (gainBox && loseBox)
+            {
+                if (actualEvent.affirmativeConclussion.conclussion[i].value < 0)
+                {
+                    obj.GetComponent<EfectElements>().box.sprite = loseBox;
+                    Debug.Log(actualEvent.affirmativeConclussion.conclussion[i].value + "less");
+                }
+                else
+                {
+                    obj.GetComponent<EfectElements>().box.sprite = gainBox;
+                    Debug.Log(actualEvent.affirmativeConclussion.conclussion[i].value + "greater");
+                }
+            }
             obj.GetComponentInChildren<EfectElements>().txt.text = actualEvent.affirmativeConclussion.conclussion[i].value + "";
             Sprite spr = null;
 
@@ -80,6 +96,19 @@ public class DecisionsAutofill : MonoBehaviour
         {
 
             GameObject obj = Instantiate(efectUIpref, ngtGrp.transform);
+            if (gainBox && loseBox)
+            {
+                if (actualEvent.negativeConclussion.conclussion[i].value < 0)
+                {
+                    obj.GetComponent<EfectElements>().box.sprite = loseBox;
+                    Debug.Log(actualEvent.negativeConclussion.conclussion[i].value + "less");
+                }
+                else
+                {
+                    obj.GetComponent<EfectElements>().box.sprite = gainBox;
+                    Debug.Log(actualEvent.negativeConclussion.conclussion[i].value + "greater");
+                }
+            }   
             obj.GetComponentInChildren<EfectElements>().txt.text = actualEvent.negativeConclussion.conclussion[i].value + "";
             Sprite spr = null;
 
