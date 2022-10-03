@@ -11805,7 +11805,6 @@ GameObject:
   - component: {fileID: 1968703879}
   - component: {fileID: 1968703882}
   - component: {fileID: 1968703881}
-  - component: {fileID: 1968703880}
   m_Layer: 5
   m_Name: Background
   m_TagString: Untagged
@@ -11833,30 +11832,6 @@ RectTransform:
   m_AnchoredPosition: {x: -36.018127, y: -23.359375}
   m_SizeDelta: {x: 1400.818, y: 1824.169}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1968703880
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1968703878}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6a7d2a1e8722d04badaacc2fd32127f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  actualEvent: {fileID: 11400000, guid: 2b63874899250f448acca4df9ebc5ccf, type: 2}
-  efectUIpref: {fileID: 1997601599493023120, guid: 807b78d9ed001744ea95d77c3e85414f, type: 3}
-  title: {fileID: 0}
-  description: {fileID: 0}
-  afrBtn: {fileID: 0}
-  afrText: {fileID: 0}
-  afGrp: {fileID: 0}
-  ngtBtn: {fileID: 0}
-  ngtText: {fileID: 0}
-  ngtGrp: {fileID: 0}
-  gainBox: {fileID: 21300000, guid: 081dd9352fad3bb4fb99923e53ed82c9, type: 3}
-  loseBox: {fileID: 21300000, guid: be22510e352bcdd4eace89e20bdd3616, type: 3}
 --- !u!114 &1968703881
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12477,7 +12452,6 @@ GameObject:
   - component: {fileID: 2102260632}
   - component: {fileID: 2102260635}
   - component: {fileID: 2102260634}
-  - component: {fileID: 2102260633}
   m_Layer: 5
   m_Name: Background
   m_TagString: Untagged
@@ -12505,30 +12479,6 @@ RectTransform:
   m_AnchoredPosition: {x: -36.018127, y: -23.359375}
   m_SizeDelta: {x: 1400.818, y: 1824.169}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2102260633
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2102260631}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6a7d2a1e8722d04badaacc2fd32127f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  actualEvent: {fileID: 11400000, guid: 2b63874899250f448acca4df9ebc5ccf, type: 2}
-  efectUIpref: {fileID: 1997601599493023120, guid: 807b78d9ed001744ea95d77c3e85414f, type: 3}
-  title: {fileID: 0}
-  description: {fileID: 0}
-  afrBtn: {fileID: 0}
-  afrText: {fileID: 0}
-  afGrp: {fileID: 0}
-  ngtBtn: {fileID: 0}
-  ngtText: {fileID: 0}
-  ngtGrp: {fileID: 0}
-  gainBox: {fileID: 21300000, guid: 081dd9352fad3bb4fb99923e53ed82c9, type: 3}
-  loseBox: {fileID: 21300000, guid: be22510e352bcdd4eace89e20bdd3616, type: 3}
 --- !u!114 &2102260634
 MonoBehaviour:
   m_ObjectHideFlags: 0
