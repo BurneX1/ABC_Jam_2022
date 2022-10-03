@@ -6,9 +6,10 @@ using System.Runtime.Serialization.Formatters.Binary;
 
 [System.Serializable] public class Data
 {
-    public int money = 1000;
     public bool alreadyPlayed = false;
     public int eventCounter;
+    public int[] stats = new int[5];
+    public bool firstTime = true;
 }
 
 public class SaveSystem
