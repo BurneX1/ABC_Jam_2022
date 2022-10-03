@@ -6,6 +6,7 @@ public class TutorialManager : MonoBehaviour
 {
     public GameObject cuyIntro;
     public GameObject cuyMagico;
+    public GameObject moneyCircle;
     //public static bool firstCuyIntro;
     public GameObject cuyTips;
     public GameObject toolTip;
@@ -18,6 +19,7 @@ public class TutorialManager : MonoBehaviour
         if(SaveSystem.data.alreadyPlayed)
         {
             cuyMagico.SetActive(true);
+            moneyCircle.SetActive(true);
             toolTip.SetActive(false);
             cuyTips.SetActive(false);
             cuyIntro.SetActive(false);

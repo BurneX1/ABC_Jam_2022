@@ -7,13 +7,12 @@ public class EventCounter : MonoBehaviour
 {
     public UnityEvent winEvent;
     public UnityEvent dieEvent;
-    public int counter;
     public Text mesageCounter;
     public int messages = 3;
     public string[] dates;
     public UnityEngine.UI.Text currentDate;
 
-    public void AddEventCount() => counter++;
+    public void AddEventCount() => SaveSystem.data.eventCounter++;
 
     private void OnEnable()
     {
@@ -28,23 +27,23 @@ public class EventCounter : MonoBehaviour
     }
     private void Update()
     {
-        if(counter >= 0 && counter < 3)
+        if(SaveSystem.data.eventCounter >= 0 && SaveSystem.data.eventCounter < 3)
         {
             currentDate.text = dates[0];
         }
-        else if(counter >= 3 && counter < 6)
+        else if(SaveSystem.data.eventCounter >= 3 && SaveSystem.data.eventCounter < 6)
         {
             currentDate.text = dates[1];
         }
-        else if (counter >= 6 && counter < 9)
+        else if (SaveSystem.data.eventCounter >= 6 && SaveSystem.data.eventCounter < 9)
         {
             currentDate.text = dates[2];
         }
-        else if (counter >= 9 && counter <= 12)
+        else if (SaveSystem.data.eventCounter >= 9 && SaveSystem.data.eventCounter <= 12)
         {
             currentDate.text = dates[3];
         }
-        else if(counter >= 12)
+        else if(SaveSystem.data.eventCounter >= 12)
         {
             if(EnergyManager.GetValue(EnergyType.Economia) <= 0)
             {

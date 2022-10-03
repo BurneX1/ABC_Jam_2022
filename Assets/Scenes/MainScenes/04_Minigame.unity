@@ -657,7 +657,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a25a7386e6ef03b4e8474475b4833589, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minigameTime: 80
+  minigameTime: 45
   text: {fileID: 396712671}
   go: {fileID: 210910270}
   ts: {fileID: 1396496732}

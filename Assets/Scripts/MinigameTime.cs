@@ -5,7 +5,7 @@ using UnityEngine.Events;
 
 public class MinigameTime : MonoBehaviour
 {
-    public float minigameTime = 80;
+    public float minigameTime;
     public UnityEngine.UI.Text text;
     public GameObject go;
     public TweenScreens ts;

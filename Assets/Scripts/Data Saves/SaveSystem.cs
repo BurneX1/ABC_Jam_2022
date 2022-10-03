@@ -8,6 +8,7 @@ using System.Runtime.Serialization.Formatters.Binary;
 {
     public int money = 1000;
     public bool alreadyPlayed = false;
+    public int eventCounter;
 }
 
 public class SaveSystem

@@ -9820,6 +9820,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cuyIntro: {fileID: 1599263384}
   cuyMagico: {fileID: 1531226319}
+  moneyCircle: {fileID: 1191301052}
   cuyTips: {fileID: 1729099847}
   toolTip: {fileID: 706650395}
   blockPanel: {fileID: 1049083460}
@@ -9854,7 +9855,6 @@ MonoBehaviour:
   dieEvent:
     m_PersistentCalls:
       m_Calls: []
-  counter: 0
   mesageCounter: {fileID: 610706312}
   messages: 3
   dates:
