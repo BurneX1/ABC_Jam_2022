@@ -12,7 +12,7 @@ public class MoneyManager : MonoBehaviour
             Instance = this;
         else Destroy(gameObject);
 
-        DontDestroyOnLoad(gameObject);
+        //DontDestroyOnLoad(gameObject);
     }
     public int money { get; private set; }
 

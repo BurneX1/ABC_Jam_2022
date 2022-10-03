@@ -5,7 +5,8 @@ using UnityEngine;
 public class TutorialManager : MonoBehaviour
 {
     public GameObject cuyIntro;
-    public static bool firstCuyIntro;
+    public GameObject cuyMagico;
+    //public static bool firstCuyIntro;
     public GameObject cuyTips;
     public GameObject toolTip;
     public GameObject blockPanel;
@@ -14,10 +15,9 @@ public class TutorialManager : MonoBehaviour
 
     private void Start()
     {
-        StartCoroutine(cuyTip());
-
-        if(firstCuyIntro)
+        if(SaveSystem.data.alreadyPlayed)
         {
+            cuyMagico.SetActive(true);
             toolTip.SetActive(false);
             cuyTips.SetActive(false);
             cuyIntro.SetActive(false);
@@ -26,14 +26,13 @@ public class TutorialManager : MonoBehaviour
 
     private IEnumerator cuyTip()
     {
-        yield return new WaitUntil(() => firstCuyIntro);
         yield return new WaitUntil(() => cuyIntro.transform.parent.gameObject.activeInHierarchy == false);
         yield return new WaitForSeconds(0);
         GameObject.Find("Canvas").GetComponent<TweenScreens>().TweenPopUp(cuyTips.transform);
         AudioManager.Instance.Play("SegundoCuy");
         GameObject.Find("Canvas").GetComponent<TweenScreens>().TweenPopUp(toolTip.transform);
         blockPanel.SetActive(true);
-        firstCuyIntro = false;
+        //firstCuyIntro = false;
 
         yield return new WaitForSeconds(tipDuration);
         GameObject.Find("Canvas").GetComponent<TweenScreens>().HidePopUp(cuyTips.transform);
@@ -58,14 +57,20 @@ public class TutorialManager : MonoBehaviour
                 {
                     cuyIntro.SetActive(false);
                     AudioManager.Instance.Stop("PrimerCuy");
-                    firstCuyIntro = true;
+                    //firstCuyIntro = true;
+                    StartCoroutine(cuyTip());
+                    SaveSystem.data.alreadyPlayed = true;
+                    SaveSystem.Save();
                 }
             }
             else if(Input.GetMouseButton(0))
             {
                 cuyIntro.SetActive(false);
                 AudioManager.Instance.Stop("PrimerCuy");
-                firstCuyIntro = true;
+                //firstCuyIntro = true;
+                StartCoroutine(cuyTip());
+                SaveSystem.data.alreadyPlayed = true;
+                SaveSystem.Save();
             }
         }
     }
