@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 public class EfectElements : MonoBehaviour
 {
+    public Image box;
     public Text txt;
     public Image icon;
     // Start is called before the first frame update

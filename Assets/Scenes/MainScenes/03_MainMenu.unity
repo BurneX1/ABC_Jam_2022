@@ -3238,6 +3238,8 @@ MonoBehaviour:
   ngtBtn: {fileID: 1483133249}
   ngtText: {fileID: 1583714744}
   ngtGrp: {fileID: 1547061899}
+  gainBox: {fileID: 21300000, guid: 081dd9352fad3bb4fb99923e53ed82c9, type: 3}
+  loseBox: {fileID: 21300000, guid: be22510e352bcdd4eace89e20bdd3616, type: 3}
 --- !u!114 &642952639
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4443,7 +4445,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: -0.44744873}
+  m_SizeDelta: {x: 0, y: 2.3122559}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1041582374
 MonoBehaviour:
@@ -5869,7 +5871,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: -0.000061035156}
+  m_SizeDelta: {x: 0, y: 2.3122559}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1247576893
 MonoBehaviour:
@@ -11191,14 +11193,6 @@ PrefabInstance:
     - target: {fileID: 850646107882622691, guid: d58dc811b84c75c44bfbbbd018c86bf0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3652136015351810488, guid: d58dc811b84c75c44bfbbbd018c86bf0, type: 3}
-      propertyPath: energieArray.Array.data[3].value
-      value: 49
-      objectReference: {fileID: 0}
-    - target: {fileID: 3652136015351810488, guid: d58dc811b84c75c44bfbbbd018c86bf0, type: 3}
-      propertyPath: energieArray.Array.data[4].value
-      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 6275368383078374149, guid: d58dc811b84c75c44bfbbbd018c86bf0, type: 3}
       propertyPath: m_Name
