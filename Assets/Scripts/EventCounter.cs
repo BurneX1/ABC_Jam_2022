@@ -12,7 +12,11 @@ public class EventCounter : MonoBehaviour
     public string[] dates;
     public UnityEngine.UI.Text currentDate;
 
-    public void AddEventCount() => SaveSystem.data.eventCounter++;
+    public void AddEventCount()
+    {
+        SaveSystem.data.eventCounter++;
+        SaveSystem.Save();
+    }
 
     private void OnEnable()
     {

@@ -33,7 +33,9 @@ public class ComicManager : MonoBehaviour
     {
         ChangeScene cs = FindObjectOfType<ChangeScene>();
         currentPage++;
-        if (currentPage >= maxComicPages) cs.Change("03_MainMenu");
+        if (currentPage >= maxComicPages) { cs.Change("03_MainMenu"); SaveSystem.data.firstTime = false;
+            SaveSystem.Save();
+        }
         else StartCoroutine(fadePages(cs));
     }
 

@@ -41,6 +41,8 @@ public class EnergyManager : MonoBehaviour
             {
       
                 energies[i].value += amount;
+                SaveSystem.data.stats[i] = energies[i].value;
+                SaveSystem.Save();
 
                 if (energies[i].validateMaxValue == true)
                 {
