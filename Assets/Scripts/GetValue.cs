@@ -7,6 +7,12 @@ public class GetValue : MonoBehaviour
 
     public EnergyType energyType;
     public UnityEngine.UI.Text text;
+
+    private void Start()
+    {
+        GetText();
+    }
+
     private void OnEnable()
     {
         EnergyManager.ValuesRefreshed += GetText;

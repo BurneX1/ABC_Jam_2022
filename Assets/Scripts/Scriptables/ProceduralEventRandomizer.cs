@@ -63,14 +63,14 @@ public class ProceduralEventRandomizer : MonoBehaviour
                 if (EnergyManager.GetPorcent(ev.dependenceType) >= ev.valuePorcent)
                 {
                     AddEvent(ev);
-                    Debug.LogError(ev.dependenceType + " " + EnergyManager.GetPorcent(ev.dependenceType) + " >= " + ev.valuePorcent);
+                    Debug.Log(ev.dependenceType + " " + EnergyManager.GetPorcent(ev.dependenceType) + " >= " + ev.valuePorcent);
                 }
                 break;
 
             case ValueCondition.Lesser:
                 if (EnergyManager.GetPorcent(ev.dependenceType) <= ev.valuePorcent)
                 {
-                    Debug.LogError(ev.dependenceType + " " + EnergyManager.GetPorcent(ev.dependenceType) + " <= " + ev.valuePorcent);
+                    Debug.Log(ev.dependenceType + " " + EnergyManager.GetPorcent(ev.dependenceType) + " <= " + ev.valuePorcent);
                     AddEvent(ev);
                 }
                 break;

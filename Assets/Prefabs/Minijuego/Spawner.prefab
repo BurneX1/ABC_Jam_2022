@@ -44,7 +44,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 337a32211467e3c46a32df22c50a5a4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  productPrefabs: []
+  productPrefabs:
+  - {fileID: 7410731723401266186, guid: 6f70b0320bfdbc840a569aee28bdde10, type: 3}
+  - {fileID: 7410731723401266186, guid: 6f70b0320bfdbc840a569aee28bdde10, type: 3}
+  - {fileID: 7410731723401266186, guid: 6f70b0320bfdbc840a569aee28bdde10, type: 3}
+  - {fileID: 7410731723401266186, guid: 6f70b0320bfdbc840a569aee28bdde10, type: 3}
+  - {fileID: 7410731723401266186, guid: 6f70b0320bfdbc840a569aee28bdde10, type: 3}
+  - {fileID: 7410731723401266186, guid: efd84b45108a62d4687875aa8562496c, type: 3}
+  - {fileID: 7410731723401266186, guid: efd84b45108a62d4687875aa8562496c, type: 3}
+  - {fileID: 7410731723401266186, guid: efd84b45108a62d4687875aa8562496c, type: 3}
+  - {fileID: 7410731723401266186, guid: efd84b45108a62d4687875aa8562496c, type: 3}
+  - {fileID: 7410731723401266186, guid: efd84b45108a62d4687875aa8562496c, type: 3}
+  - {fileID: 7760103904476900308, guid: 482dcc19998345d43bb1fb85cbd5d0ab, type: 3}
+  - {fileID: 7760103904476900308, guid: f515fdc65c2493d4e974f54e9f2359b2, type: 3}
+  - {fileID: 7760103904476900308, guid: 5dc676eaa9daef74a892be69d6a32993, type: 3}
+  - {fileID: 7760103904476900308, guid: fdfb5994388762e48a681ce6247ac9a9, type: 3}
+  - {fileID: 7760103904476900308, guid: a427fbce8e2578f4395d1792abb8d6e5, type: 3}
   minSpawnRate: 1
   maxSpawnRate: 3
 --- !u!114 &7140191458629451116

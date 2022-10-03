@@ -24,6 +24,14 @@ public class EnergyManager : MonoBehaviour
 
     }
 
+    private void Start()
+    {
+        for (int i = 0; i < energies.Length; i++)
+        {
+            energies[i].value = SaveSystem.data.stats[i];
+            SaveSystem.Save();
+        }
+    }
     private void Update()
     {
         energieArray = energies;

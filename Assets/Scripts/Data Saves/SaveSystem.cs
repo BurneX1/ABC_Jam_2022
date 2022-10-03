@@ -8,7 +8,7 @@ using System.Runtime.Serialization.Formatters.Binary;
 {
     public bool alreadyPlayed = false;
     public int eventCounter;
-    public int[] stats = new int[5];
+    public int[] stats;
     public bool firstTime = true;
 }
 
